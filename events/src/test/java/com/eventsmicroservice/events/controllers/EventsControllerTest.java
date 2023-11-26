@@ -11,9 +11,9 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
+import jakarta.validation.Validator;
+import jakarta.validation.Validation;
+import jakarta.validation.ValidatorFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -28,7 +28,7 @@ public class EventsControllerTest {
 
     private Validator validator;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         MockitoAnnotations.initMocks(this);
 
@@ -47,10 +47,10 @@ public class EventsControllerTest {
 
         EventsModel eventsModel = new EventsModel();
         eventsModel.setName("Event Name");
-        eventsModel.setName("Event Type");
-        eventsModel.setName("Event Date");
-        eventsModel.setName("Event Hour");
-        eventsModel.setName("Event Local");
+        eventsModel.setEventType("Event Type");
+        eventsModel.setEventDate("Event Date");
+        eventsModel.setEventHour("Event Hour");
+        eventsModel.setEventLocal("Event Local");
 
         when(eventsService.save(any(EventsModel.class))).thenReturn(eventsModel);
 
