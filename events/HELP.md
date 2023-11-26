@@ -13,6 +13,9 @@ O projeto está dividido em vários módulos:
   * `repositories`: Acesso ao banco de dados PostgreSQL.
 * email: Microserviço responsável por enviar emails quando um novo evento é cadastrado.
 
+## Spring Boot
+Este projeto utiliza o Spring Boot, um framework Java que simplifica o desenvolvimento de aplicativos baseados em Spring, fornecendo um ambiente pronto para uso, com configurações padrão e facilitando a criação de aplicativos robustos.
+
 ## Configuração e Execução
 
 ### Pré-requisitos
