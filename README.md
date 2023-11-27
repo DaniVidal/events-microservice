@@ -1,6 +1,9 @@
 # Full Flow Asynchronous Communication - Projeto de Cadastro de Eventos
 Este projeto em Java é um exemplo de arquitetura de microsserviços para um sistema de cadastro de eventos, utilizando comunicação assíncrona entre os serviços através de um broker RabbitMQ.
 
+## Funcionamento
+Quando um novo evento é cadastrado através da API (/events) no event-service, uma mensagem é enviada para a exchange do RabbitMQ. Essa mensagem é roteada para a fila específica do email-service, onde o microsserviço de email a consome e realiza o envio do email com os detalhes do evento.
+
 ## Estrutura do Projeto
 
 O projeto está dividido em vários módulos:
