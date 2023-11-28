@@ -5,6 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 
 public record EventsRecordDto(
         @NotBlank String name,
+        @NotBlank String email,
         @NotBlank String eventType,
         @NotBlank String eventDate,
         @NotBlank String eventHour,

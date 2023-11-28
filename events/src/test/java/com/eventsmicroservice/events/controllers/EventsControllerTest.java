@@ -40,6 +40,7 @@ public class EventsControllerTest {
     public void testSaveEvent() {
         EventsRecordDto recordDto = new EventsRecordDto(
                 "Event Name",
+                "Event Owner Email",
                 "Event Type",
                 "Event Date",
                 "Event Hour",
@@ -47,6 +48,7 @@ public class EventsControllerTest {
 
         EventsModel eventsModel = new EventsModel();
         eventsModel.setName("Event Name");
+        eventsModel.setEmail("Event Owner Email");
         eventsModel.setEventType("Event Type");
         eventsModel.setEventDate("Event Date");
         eventsModel.setEventHour("Event Hour");

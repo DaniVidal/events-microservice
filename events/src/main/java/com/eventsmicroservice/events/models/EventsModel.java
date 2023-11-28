@@ -13,6 +13,7 @@ public class EventsModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID eventsId;
     private String name;
+    private String email;
     private String eventType;
     private String eventDate;
     private String eventHour;
@@ -32,6 +33,14 @@ public class EventsModel implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getEventType() {

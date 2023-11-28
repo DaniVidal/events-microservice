@@ -1,4 +1,9 @@
 package com.eventsmicroservice.email.dtos;
 
-public record EmailRecordDto() {
+import java.util.UUID;
+
+public record EmailRecordDto(UUID eventId,
+                             String emailTo,
+                             String subject,
+                             String text) {
 }
