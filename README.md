@@ -25,7 +25,7 @@ Este projeto utiliza o Spring Boot, um framework Java que simplifica o desenvolv
 ### Pré-requisitos
 Certifique-se de ter instalado:
 
-* Java 11 ou superior
+* Java 16 ou superior
 * PostgreSQL
 * RabbitMQ
 
