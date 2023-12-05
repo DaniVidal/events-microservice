@@ -3,6 +3,7 @@ Este projeto em Java é um exemplo de arquitetura de microsserviços para um sis
 
 ## Funcionamento
 Quando um novo evento é cadastrado através da API (/events) no event-service, uma mensagem é enviada para a exchange do RabbitMQ. Essa mensagem é roteada para a fila específica do email-service, onde o microsserviço de email a consome e realiza o envio do email com os detalhes do evento.
+![Imagem do rabbitMQ configurado com a fila funcionando!](images/rabbitMQ-queue.png)
 
 ## Estrutura do Projeto
 
@@ -18,7 +19,7 @@ O projeto está dividido em vários módulos:
 
 ## Spring Boot
 Este projeto utiliza o Spring Boot, um framework Java que simplifica o desenvolvimento de aplicativos baseados em Spring, fornecendo um ambiente pronto para uso, com configurações padrão e facilitando a criação de aplicativos robustos.
-
+![Imagem do projeto inicializado!](images/projeto-inicializado.png)
 
 ## Configuração e Execução
 
@@ -43,6 +44,7 @@ Quando um novo evento é cadastrado via API no event-service, uma mensagem é en
 
 ## Testes Unitários
 O projeto utiliza JUnit e Mockito para realizar testes unitários nos serviços e controladores do event-service.
+![Imagem da estrutura de testes criado!](images/unit-tests.png)
 
 ### Configuração
 Certifique-se de ter as dependências necessárias no seu arquivo pom.xml para o JUnit e Mockito:
