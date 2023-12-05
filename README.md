@@ -3,7 +3,6 @@ Este projeto em Java é um exemplo de arquitetura de microsserviços para um sis
 
 ## Funcionamento
 Quando um novo evento é cadastrado através da API (/events) no event-service, uma mensagem é enviada para a exchange do RabbitMQ. Essa mensagem é roteada para a fila específica do email-service, onde o microsserviço de email a consome e realiza o envio do email com os detalhes do evento.
-![Imagem do rabbitMQ configurado com a fila funcionando!](images/rabbitMQ-queue.png)
 
 ## Estrutura do Projeto
 
@@ -38,6 +37,9 @@ Certifique-se de ter instalado:
 1. Clone este repositório.
 2. Navegue até o diretório do event e execute:
    `./mvnw spring-boot:run`
+
+## RabbitMQ
+![Imagem do rabbitMQ configurado com a fila funcionando!](images/rabbitMQ-queue.png)
 
 ## Comunicação Assíncrona
 Quando um novo evento é cadastrado via API no event-service, uma mensagem é enviada para a exchange do RabbitMQ. O emailService, conectado a essa exchange, receberá a mensagem e enviará um email com os detalhes do evento.
