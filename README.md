@@ -15,6 +15,11 @@ O projeto está dividido em vários módulos:
   * `dtos`: Objetos de transferência de dados para comunicação entre serviços.
   * `repositories`: Acesso ao banco de dados PostgreSQL.
 * email: Microserviço responsável por enviar emails quando um novo evento é cadastrado.
+  * `consumers`: Responsável por consumir informações de outras fontes, sejam elas APIs externas, filas de mensagens, ou qualquer outro tipo de entrada de dados.
+  * `dtos`: Objetos de transferência de dados para comunicação entre serviços.
+  * `models`: Definições das entidades de dados.
+  * `repositories`: Acesso ao banco de dados PostgreSQL.
+  * `services`: Lógica de negócio para processamento do envio de email.
 
 ## Spring Boot
 Este projeto utiliza o Spring Boot, um framework Java que simplifica o desenvolvimento de aplicativos baseados em Spring, fornecendo um ambiente pronto para uso, com configurações padrão e facilitando a criação de aplicativos robustos.
