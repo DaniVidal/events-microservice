@@ -6,7 +6,7 @@ Quando um novo evento é cadastrado através da API (/events) no event-service, 
 
 ## Estrutura do Projeto
 
-O projeto está dividido em vários módulos:
+O projeto está dividido em dois módulos:
 
 * events: Microserviço responsável pelo cadastro de eventos.
   * `controllers`: Contém os endpoints da API REST para interagir com os eventos.
